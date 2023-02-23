@@ -24,4 +24,3 @@
 //     .filter(val => (val > 18 ? val : false))
 //     .reduce((acc, val) => acc + val, 0) / data.length;
 // console.log(calcAverageHumanAge(data));
-
