@@ -24,3 +24,15 @@
 //     .filter(val => (val > 18 ? val : false))
 //     .reduce((acc, val) => acc + val, 0) / data.length;
 // console.log(calcAverageHumanAge(data));
+// const x = new Array(7);
+// console.log(x);
+// // console.log(x.map(() => 5));
+// // x.fill(1);
+// x.fill(1, 3, 5);
+// console.log(x);
+// Arr.fill(23,2,6)
+// const diceRoll = Array.from({ length: 100 }, (cur, i) =>
+//   Math.floor(Math.random() * 6 + 1)
+// );
+// console.log(diceRoll);
+
