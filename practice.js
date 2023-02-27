@@ -93,8 +93,26 @@ const sarahDog = dogs.find(dog => dog.owners.includes(`Sarah`));
 const ownersEatTooMuch = dogs
   .filter(dog => dog.curFood > dog.recomendedFood)
   .flatMap(dog => dog.owners);
-// console.log(ownersEatTooMuch);
+// console.log(ownersEaჼtTooMuch);
 const ownersEatTooLittle = dogs
   .filter(dog => dog.curFood < dog.recomendedFood)
   .flatMap(dog => dog.owners);
 // console.log(ownersEatTooLittle);
+// console.log(`${ownersEatTooMuch.join(` and `)}'s dogs eat too much `);
+// console.log(`${ownersEatTooLittle.join(` and `)}'s dogs eat too little `);
+
+//? 5 //
+// console.log(dogs.some(dog => dog.curFood === dog.recomendedFood));
+
+//? 6 //
+// console.log(
+//   dogs.find(
+//     dog =>
+//       dog.curFood > dog.recomendedFood * 0.9 &&
+//       dog.curFood < dog.recomendedFood * 1.1
+//   )
+// );
+const dogsSorted = dogs
+  .slice()
+  .sort((a, b) => a.recomendedFood - b.recomendedFood);
+console.log(dogsSorted);
